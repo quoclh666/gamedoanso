@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  .level-selection {
+    margin-top: 30px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+  }
+  
+  .game {
+    display: none;
+    margin-top: 30px;
+  }
+  
+  input {
+    padding: 5px;
+  }
+  
+  #result {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

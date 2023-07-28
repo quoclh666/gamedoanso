@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Đoán số LQ</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Đoán số <span class="highlight">LQ</span></h1>
+    <div class="instructions">
+      <h2>Chào mừng <span class="highlight">Thảo</span> đến với trò chơi "Đoán số LQ"!</h2>
+      <p>
+        Trò chơi gồm ba cấp độ: Dễ, Trung bình và Khó.
+        - Đoán một số ngẫu nhiên nằm trong khoảng của từng cấp độ và có số lượt đoán cho phép.
+        - Mỗi lần đoán, trang web sẽ cung cấp gợi ý về số đó lớn hơn hay nhỏ hơn số cần đoán.
+        - <span class="highlight">Thảo</span> cần chọn số đoán và nhấn nút "Kiểm tra" để xem kết quả.
+        - Nếu <span class="highlight">Thảo</span> đoán đúng cả 3 cấp độ, cô ấy sẽ nhận được mật khẩu mở khóa.
+        Chúc <span class="highlight">Thảo</span> may mắn và vui vẻ trong trò chơi!
+      </p>
+    </div>
+    <div class="level-selection">
+      <button onclick="startGame(20)">Dễ(0-20)</button>
+      <button onclick="startGame(50)">TB(0-50)</button>
+      <button onclick="startGame(100)">Khó(0-100)</button>
+    </div>
+    <div class="game" style="display: none;">
+      <p>Cấp độ: <span id="currentLevel"></span></p>
+      <input type="number" id="guessInput" placeholder="Nhập số đoán của bạn">
+      <button onclick="checkGuess()">Kiểm tra</button>
+      <p id="result"></p>
+      <button onclick="playAgain()">Chơi lại</button>
+    </div>
+    <div class="password" style="display: none;">
+      <p id="password"></p>
+    </div>
+    <div class="play-again" style="display: none;">
+      <button onclick="selectLevel()">Chọn lại cấp độ</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
